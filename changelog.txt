@@ -1,0 +1,49 @@
+
+
+
+
+1.4.1
+Fixed setting mispelling (invicibility)
+1.4.0
+Added hotkeys for toggling Invincibility/Infinte Stamina and cycling through DashMode
+1.3.0
+[/] scroll to change brush width in draw 
+(added ability to know thickness in data but it can't be done with how i do it it looks bad)
+1.2.1
+JumpToNextModOption and JumpToPreviousModOption Buttons now "repeat" if held down :D
+1.2.0
+Hotkey to mute/unmute music (very temporary)
+Fixed a bug where assist icon controller was added too often
+1.1.1
+Fixed a bug where exiting draw mode in an unintended way can crash the game
+1.1.0
+Add little icons that show which variant is enabled rn (top-left)
+Make S&Q2M respect SaveQuitDisabled
+1.0.2
+Fixed a bug where Xaphan Helper Teleporter crashed cause it has no menu items
+Fixed a bug where you could clikc COntinue/Delete Session really fast
+1.0.1
+There is now an option to disable Save And Quit To Map
+Changed Warning text to recommend backups instead
+Changed place of Save And Quit To Map to be above Save And Quit (for speedrunning)
+1.0.0
+Added Save & Quit To Map
+0.1.0
+Added JumpToNextModOption and JumpToPreviousModOption Buttons, which let you jump to the previous/next mod in the mod options menu
+0.0.7
+Set DrawModeUI Depth to 1 million
+0.0.6
+Bugfix: Fixed crash if you drew on same spot twice
+0.0.5
+3 More colors
+Changed default color1
+Added ability to show custom cursor which also shows the color in use
+0.0.4
+Add option to not disable Background becoming darker if Draw Mode is Enabled
+0.0.3
+Changed Eraser to be filled circle.. kinda (hack).
+Draw Mode can now be entered from pause
+0.0.2
+Bugfix: DrawMode no long sets state of player since it is paused anyway
+0.0.1
+Added DrawMode

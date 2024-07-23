@@ -1,0 +1,6 @@
+- Name: AurorasAdditions
+  Version: 1.4.0
+  DLL: bin/AurorasAdditions.dll
+  Dependencies:
+    - Name: Everest
+      Version: 1.2781.0

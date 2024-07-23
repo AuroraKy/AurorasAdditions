@@ -1,0 +1,14 @@
+modoptions_AurorasAdditions_ToggleDrawMode= Activate Draw Mode
+modoptions_AurorasAdditions_ToggleDrawMode_Subtext= Activates Draw Mode which pauses the game and lets you draw, press button again to disable
+modoptions_AurorasAdditions_DrawModeColor= Draw Mode Color
+modoptions_AurorasAdditions_DrawModeColor_Subtext= Must be a hex code with exactly 6 chars (0-9 or a-f)
+modoptions_AurorasAdditions_DrawModeColor4_Subtext= Must be a hex code with exactly 6 chars (0-9 or a-f), activated by holding Color 2 and 3
+modoptions_AurorasAdditions_DrawCursor= If enabled draws custom cursor that shows current color, otherwise shows mouse cursor.
+modoptions_AurorasAdditions_ShowAssistIcons_Subtext= If enabled draws icons at the bottom left if non-obvious assists are enabled.
+modoptions_AurorasAdditions_ShowModeIcons_Subtext= If enabled draws icons if Variant mode or Assist mode is enabled.
+modoptions_AurorasAdditions_ToggleInvincibility=Toggle Invincibility
+
+menu_AurorasAdditions_SaveAndQuitToMap= Save and Quit to Map
+menu_AurorasAdditions_SaveAndQuitToMap_Warning= Backing up save files before use is recommended.
+chapterpanel_AurorasAdditions_deleteSession= Delete Session
+chapterpanel_AurorasAdditions_continueSession= Continue Session

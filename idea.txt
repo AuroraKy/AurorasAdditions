@@ -1,0 +1,25 @@
+ok hear me out:
+
+Save & Quit To Map?
+
+[X] - make a button in menu
+[X] - save sessions when button and quit map
+->[X] Save all sessions (including mods excluding us) to our file
+->[X] mark map as "has a save"
+->[X] call LevelExit(GiveUp)
+->[X] Delete Session data if map is exited/restarted/golden death'd normally
+[X] - "continue" if map is saved -> continue like save and quit would?
+->[X] Button "Start over" and "continue"
+-->[X] continue: start map with session (InArea = true)
+-->[X] start over: delete session data, show checkpoints like
+
+[ ] Show data about session?
+[ ] Show continue session with checkpoints (or in a seperate menu if no exist) instead of a 3rd thing inbetween
+
+issues:
+- It keeps acting like save and quit is happening for no reason
+
+Things to check:
+Does it break in Interlude? (prologue/epilogue) no
+does it affect save data at all?
+(any chance to break save data?)
