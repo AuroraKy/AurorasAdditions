@@ -12,3 +12,4 @@ menu_AurorasAdditions_SaveAndQuitToMap= Save and Quit to Map
 menu_AurorasAdditions_SaveAndQuitToMap_Warning= Backing up save files before use is recommended.
 chapterpanel_AurorasAdditions_deleteSession= Delete Session
 chapterpanel_AurorasAdditions_continueSession= Continue Session
+modoptions_AurorasAdditions_SpinnerSpin=Make Spinners Spin

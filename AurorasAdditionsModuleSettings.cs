@@ -1,15 +1,18 @@
 using Microsoft.Xna.Framework.Input;
+using System;
 
 namespace Celeste.Mod.AurorasAdditions {
     public class AurorasAdditionsModuleSettings : EverestModuleSettings {
-
+        
         public bool DisableDrawModeBackground { get; set; } = true;
         [SettingSubText("modoptions_AurorasAdditions_DrawCursor")]
         public bool DrawCursor { get; set; } = true;
         public bool ShowSaveAndQuitToMap { get; set; } = true;
         [SettingSubText("modoptions_AurorasAdditions_ShowAssistIcons_Subtext")]
         public bool ShowAssistIcons { get; set; } = true;
-        public bool ShowModeIcons { get; set; } = true;
+        public bool ShowModeIcons { get; set; } = false;
+        [SettingName("modoptions_AurorasAdditions_SpinnerSpin")]
+        public bool SpinnerSpin { get; set; } = false;
         [SettingRange(1, 10)]
         public int IconAlpha { get; set; } = 8;
 

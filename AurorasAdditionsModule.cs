@@ -74,11 +74,50 @@ namespace Celeste.Mod.AurorasAdditions
             On.Celeste.OuiChapterPanel.Start += OuiChapterPanel_Start;
             On.Celeste.OuiChapterPanel.Swap += OuiChapterPanel_Swap;
             On.Celeste.OuiChapterPanel.DrawCheckpoint += OuiChapterPanel_DrawCheckpoint;
+            On.Celeste.CrystalStaticSpinner.Update += CrystalStaticSpinner_Update;
+            //On.Monocle.Entity.Render += Entity_Render;
+            //On.Celeste.Player.Die += Player_Die;
+        }
+        /*
+        List<Entity> doNotRender = new List<Entity>();
+        private PlayerDeadBody Player_Die(On.Celeste.Player.orig_Die orig, Player self, Vector2 direction, bool evenIfInvincible, bool registerDeathInStats) {
+            doNotRender = new List<Entity>();
+            return orig(self, direction, evenIfInvincible, registerDeathInStats);
         }
 
+        private void Entity_Render(On.Monocle.Entity.orig_Render orig, Entity self) {
 
-        public override void Unload()
-        {
+            if (doNotRender.Contains(self)) return;
+            if (Engine.Scene.OnInterval(0.05f)) {
+                if(self is not Player) {
+                    Random rnd = new Random();
+                    if (rnd.Next(1, 100) <= 1) {
+                        doNotRender.Add(self);
+                    }
+                }
+            }
+            orig(self);
+        }
+        */
+        private void CrystalStaticSpinner_Update(On.Celeste.CrystalStaticSpinner.orig_Update orig, CrystalStaticSpinner self) {
+            orig(self);
+            if (!AurorasAdditionsModule.ModSettings.SpinnerSpin) return;
+            if (self.Get<Image>() == null) return;
+            //self.Get<Image>().Rotation += 0.33f;
+            if ((Engine.Scene as Level) == null || (Engine.Scene as Level).Transitioning) return;
+            foreach (Component component in self.Components) {
+                if(component is Image i ) {
+                    i.Rotation += 0.33f;
+                }
+            }
+        }
+
+        public override void Unload() {
+
+
+            //On.Celeste.Player.Die -= Player_Die;
+            //On.Monocle.Entity.Render -= Entity_Render;
+            On.Celeste.CrystalStaticSpinner.Update -= CrystalStaticSpinner_Update;
             On.Celeste.Level.Update -= ModLevelUpdate;
             On.Celeste.TextMenu.Update -= TextMenu_Update;
             On.Celeste.TextMenu.Render -= TextMenu_Render;
