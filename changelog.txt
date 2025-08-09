@@ -1,4 +1,6 @@
 1.4.1
+Fix a bug where F2 on endscreen crashes the game
+1.4.1
 Fixed setting mispelling (invicibility)
 Show Mode Icons is no longer on by default
 Added complete meme setting to make spinners spin ig this is a thing now

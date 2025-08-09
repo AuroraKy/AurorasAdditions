@@ -324,7 +324,7 @@ namespace Celeste.Mod.AurorasAdditions
 
         private void Level_OnExit(Level level, LevelExit exit, LevelExit.Mode mode, Session session, HiresSnow snow)
         {
-            if(!ignoreLevelExit)
+            if(!ignoreLevelExit && level != null)
             {
                 string mapUID = GetMapUniqueID(level.Session.Area);
                 Instance.AASaveData.SessionsPerLevel.Remove(mapUID);
